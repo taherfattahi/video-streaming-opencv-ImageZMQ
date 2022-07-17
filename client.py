@@ -20,7 +20,7 @@ args = vars(ap.parse_args())
 
 # initialize the ImageSender object with the socket address of the
 # server
-sender = imagezmq.ImageSender(connect_to="tcp://{}:5555".format(
+sender = imagezmq.ImageSender(connect_to="tcp://{}:5521".format(
 	args["server_ip"]))
 
 # get the host name, initialize the video stream, and allow the
